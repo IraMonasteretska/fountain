@@ -40,6 +40,40 @@
     right: 0;
     bottom: 80px;
     z-index: 2;
+    animation: 3s ease-in-out infinite move;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.mainsection {
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.5);
+        z-index: 2;
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    .scrollarrow {
+        z-index: 3;
+    }
 }
 
 // --- dis slider
@@ -96,14 +130,16 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        background: linear-gradient(90.93deg, #7DE8EF 0.72%, #97F9FF 99.32%);
+        // background: linear-gradient(90.93deg, #7DE8EF 0.72%, #97F9FF 99.32%);
+        background: #7DE8EF;
         border-radius: 50%;
         text-decoration: none;
         transition: 0.3s;
         position: relative;
 
         &:hover {
-            background: linear-gradient(90.93deg, #A1F9FF 0.72%, #DCFDFF 99.32%), #C9ADA7;
+            // background: linear-gradient(90.93deg, #A1F9FF 0.72%, #DCFDFF 99.32%), #C9ADA7;
+            background: #A1F9FF;
         }
 
         &::after {

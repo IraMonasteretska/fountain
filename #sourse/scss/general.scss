@@ -72,14 +72,16 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    background: linear-gradient(90.93deg, #7DE8EF 0.72%, #97F9FF 99.32%);
+    // background: linear-gradient(90.93deg, #7DE8EF 0.72%, #97F9FF 99.32%);
+    background: #7DE8EF;
     border-radius: 50%;
     text-decoration: none;
     transition: 0.3s;
     position: relative;
 
     &:hover {
-        background: linear-gradient(90.93deg, #A1F9FF 0.72%, #DCFDFF 99.32%), #C9ADA7;
+        // background: linear-gradient(90.93deg, #A1F9FF 0.72%, #DCFDFF 99.32%), #C9ADA7;
+        background: #A1F9FF;
     }
 
     &::after {

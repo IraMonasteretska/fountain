@@ -17,6 +17,10 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             576: {
                 slidesPerView: 1.5,
@@ -116,7 +120,7 @@ $(document).ready(function () {
 
     // SERVICES
     // faq
-    $('.question__header').click(function(){
+    $('.question__header').click(function () {
         $(this).next('.question__body').slideToggle();
         $(this).toggleClass('show');
 
