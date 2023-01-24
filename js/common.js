@@ -6,6 +6,11 @@ $(document).ready(function () {
         },
 
         speed: 700,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
     });
 
     //   testimonials slider
