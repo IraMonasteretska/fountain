@@ -1,0 +1,367 @@
+.titlesection {
+    position: relative;
+    min-height: 460px;
+    padding: 100px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 120%;
+    }
+}
+
+.infosect3 {
+    padding: 130px 0 30px;
+
+    .imgwrap {
+        overflow: hidden;
+        border-radius: 6px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .textwrap {
+        padding-left: 20px;
+
+        p {
+            margin-bottom: 10px;
+            color: #4A4A4A;
+            font-size: 18px;
+            line-height: 150%;
+
+            &.title {
+                margin-bottom: 25px;
+                color: #052629;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 140%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.discountslidersect.noslider {
+    .discountslider:after {
+        z-index: -1;
+    }
+}
+
+// faq
+.faq {
+    padding: 100px 0 30px;
+    background: url('../img/gbimg3.png') no-repeat right bottom;
+}
+
+.question {
+    margin-bottom: 40px;
+
+    &:first-child {
+        .question__body {
+            display: block;
+        }
+    }
+}
+
+.question__header {
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+        content: '';
+        width: 26px;
+        height: 16px;
+        display: inline-block;
+        background: url('../img/faq-arrow.svg') no-repeat center / 100%;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        transition: 0.3s;
+    }
+
+    p {
+        position: relative;
+        color: #052629;
+        font-size: 30px;
+        line-height: 140%;
+        padding-left: 29px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: #7DE8EF;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &.show {
+        &::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+}
+
+.question__body {
+    padding-top: 30px;
+    display: none;
+
+    .question__bodywrapper {
+        background: #E5F5F9;
+        border-radius: 6px;
+        padding: 50px;
+
+        p {
+            color: #4A4A4A;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+}
+
+// form sect
+.appointment {
+    padding: 100px 0 100px;
+    background: url('../img/services3.jpg') no-repeat center right / auto calc(100% - 300px);
+}
+
+.appointmentform {
+    width: 100%;
+    max-width: 560px;
+    background: #EEF8FB;
+    border-radius: 6px;
+    padding: 50px;
+
+    p {
+        color: #4A4A4A;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        span {
+            color: #052629;
+            font-weight: 600;
+        }
+
+        &.title {
+            margin-bottom: 18px;
+            color: #052629;
+            text-transform: uppercase;
+            font-size: 38px;
+            line-height: 130%;
+        }
+    }
+
+    form {
+        margin-top: 50px;
+    }
+}
+
+.inputswrapper {
+    input {
+        width: 100%;
+        height: 58px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        margin-bottom: 25px;
+        padding-left: 14px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border: 1px solid #fff;
+
+        &:focus {
+            border-color: #cfebf2;
+        }
+
+        &::placeholder {
+            color: #949494;
+        }
+    }
+
+    button {
+        margin-top: 25px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+
+
+@media(min-width:1950px) {
+    .appointment {
+        padding: 100px 0 100px;
+        background: url('../img/services3.jpg') no-repeat center center;
+    }
+}
+
+@media(max-width:1500.8px) {
+
+    .question__header p {
+        font-size: 24px;
+    }
+
+    .appointmentform p {
+        font-size: 18px;
+    }
+
+    .appointmentform p.title {
+        font-size: 26px;
+    }
+
+    .appointmentform form {
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .titlesection h1 {
+        font-size: 55px;
+    }
+
+    .discountslidersect.noslider {
+        padding-top: 100px;
+    }
+
+    .appointment {
+        background-position: center right -100px;
+    }
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .titlesection h1 {
+        font-size: 48px;
+    }
+
+    .infosect3 .textwrap {
+        padding-left: 0;
+    }
+
+    .infosect3 .imgwrap {
+        margin-bottom: 20px;
+    }
+
+    .discountslidersect.noslider {
+        .discountslider .textwrap {
+            padding-top: 0;
+        }
+    }
+
+    .appointmentform {
+        max-width: 100%;
+    }
+
+
+
+
+    .infosect3 {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .titlesection h1 {
+        font-size: 36px;
+    }
+
+    .titlesection {
+        min-height: 300px;
+    }
+
+    .infosect3 {
+        padding-top: 50px;
+    }
+
+    .infosect3 .textwrap p.title {
+        margin-bottom: 10px;
+    }
+
+    .discountslidersect.noslider,
+    .faq {
+        padding-top: 50px;
+    }
+
+    .question__body .question__bodywrapper {
+        padding: 30px;
+    }
+
+    .faq {
+        background: none;
+    }
+
+    .question {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .appointment {
+        background: none;
+        padding: 30px 0;
+    }
+
+    .appointmentform {
+        padding: 30px;
+    }
+
+    .appointmentform p.title {
+        font-size: 22px;
+    }
+
+    .inputswrapper input {
+        height: 50px;
+    }
+
+
+
+
+
+
+    .infosect3 .textwrap p.title,
+    .question__header p {
+        font-size: 18px;
+    }
+
+    .infosect3 .textwrap p,
+    .question__body .question__bodywrapper p {
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-2 col-sm-4 col-5">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 mobmenu">
+                    <div class="mobmenuheader">
+                        <div class="mobmenuheader__wrap">
+                            <img class="moblogo" src="img/logo.svg" alt="logo">
+                            <bitton class="closemenu">
+                                <img src="img/close.svg" alt="close menu">
+                            </bitton>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <span>Services</span>
+                                <div class="submenu twocol">
+                                    <ul>
+                                        <li><a href="#">Wrinkle relaxants </a></li>
+                                        <li><a href="#">IPL</a></li>
+                                        <li><a href="#">Lip enhancers</a></li>
+                                        <li><a href="#">Cool Sculpting</a></li>
+                                        <li><a href="#">Facial enhancement
+                                                with fillers </a></li>
+                                        <li><a href="#">PDO thread facelift</a></li>
+                                        <li><a href="#">Facial volume
+                                                replacement </a></li>
+                                        <li><a href="#">Laser facial peel</a></li>
+                                        <li><a href="#">Kybella</a></li>
+                                        <li><a href="#">Mole removal</a></li>
+                                        <li><a href="#">Microneedling</a></li>
+                                        <li><a href="#">Pigmentation erasing</a></li>
+                                        <li><a href="#">Prp facial</a></li>
+                                        <li><a href="#">Hands rejuvenation</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <span>about us</span>
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#">Office policies</a></li>
+                                        <li><a href="#">Frequently asked questions</a></li>
+                                        <li><a href="#">Meet providers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Connect with us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobcontbox">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="img/fbblack.svg" alt="facebook"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/instblack.svg" alt="instagram"></a></li>
+                        </ul>
+                        <a href="#" class="circlink">
+                            book an appointment
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8 col-7">
+                    <div class="header__contacts">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.5 2.5H18.75C17.0924 2.5 15.5027 3.15848 14.3306 4.33058C13.1585 5.50269 12.5 7.0924 12.5 8.75V12.5H8.75V17.5H12.5V27.5H17.5V17.5H21.25L22.5 12.5H17.5V8.75C17.5 8.41848 17.6317 8.10054 17.8661 7.86612C18.1005 7.6317 18.4185 7.5 18.75 7.5H22.5V2.5Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.25 2.5H8.75C5.29822 2.5 2.5 5.29822 2.5 8.75V21.25C2.5 24.7018 5.29822 27.5 8.75 27.5H21.25C24.7018 27.5 27.5 24.7018 27.5 21.25V8.75C27.5 5.29822 24.7018 2.5 21.25 2.5Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M20 14.2125C20.1543 15.2528 19.9766 16.3153 19.4922 17.2488C19.0078 18.1823 18.2414 18.9393 17.302 19.4121C16.3626 19.8849 15.2981 20.0495 14.2597 19.8824C13.2214 19.7153 12.2622 19.2251 11.5185 18.4815C10.7749 17.7378 10.2847 16.7786 10.1176 15.7403C9.9505 14.702 10.1151 13.6374 10.5879 12.698C11.0607 11.7586 11.8177 10.9922 12.7512 10.5078C13.6847 10.0234 14.7472 9.84575 15.7875 10C16.8487 10.1574 17.8311 10.6518 18.5896 11.4104C19.3482 12.1689 19.8426 13.1514 20 14.2125Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M22.4932 8.03332C22.5125 8.16336 22.4903 8.29617 22.4298 8.41286C22.3692 8.52954 22.2734 8.62417 22.156 8.68327C22.0386 8.74237 21.9055 8.76295 21.7757 8.74206C21.6459 8.72118 21.526 8.6599 21.4331 8.56694C21.3401 8.47398 21.2788 8.35408 21.2579 8.22429C21.2371 8.0945 21.2576 7.96143 21.3167 7.84401C21.3758 7.72658 21.4705 7.63078 21.5871 7.57024C21.7038 7.50969 21.8366 7.48748 21.9667 7.50676C22.0993 7.52643 22.2221 7.58824 22.3169 7.68306C22.4118 7.77788 22.4736 7.90068 22.4932 8.03332Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="circlebtn">
+                            book an<br> appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="headerburger">
+                <img src="img/burger.svg" alt="menu">
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="main">
+        <section class="mainsection">
+            <img class="mainsection__img" src="img/mainpic.png" alt="img">
+            <div class="container">
+                <h1>
+                    YOUR PASS TO<br> REJUVENATION
+                </h1>
+            </div>
+            <div class="scrollarrow">
+                <a href="#discount"><img src="img/arrow-scroll.svg" alt="next section"></a>
+            </div>
+        </section>
+
+        <div class="discountslidersect" id="discount">
+            <div class="discountslider">
+                <div class="container">
+                    <div class="swiper discountslider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="textwrap">
+                                            <p class="title">10% discount</p>
+                                            <div class="descr">
+                                                <p>
+                                                    at the first visit to any service when registering online
+                                                </p>
+                                            </div>
+                                            <a href="#" class="circbtn">
+                                                book an<br>
+                                                appointment
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="imgwrap">
+                                            <img src="img/img1.jpg" alt="slide img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="textwrap">
+                                            <p class="title">10% discount</p>
+                                            <div class="descr">
+                                                <p>
+                                                    at the first visit to any service when registering online
+                                                </p>
+                                            </div>
+                                            <a href="#" class="circbtn">
+                                                book an<br>
+                                                appointment
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="imgwrap">
+                                            <img src="img/img1.jpg" alt="slide img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="infosect">
+            <div class="container">
+                <h2 class="sectiontitle"><span>welcome to the</span> Fountain of Youth Medspa</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-4 left">
+                        <div class="descr">
+                            <p>
+                                We offer the most advanced technological innovations in Aesthetic Rejuvenation,
+                                enhancing and uncovering our clients true beauty
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 center">
+                        <div class="imgwrap">
+                            <img src="img/img2.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 right">
+                        <div class="descr">
+                            <p class="title">Aesthetic services provided by the team directed by physician.</p>
+                            <p>
+                                It is our goal to continuously improve the quality of our services and the outcomes of
+                                our patients.
+                            </p>
+                            <p>
+                                We utilize latest technological advances to achieve superior results: non-invasive
+                                /minimally invasive aesthetic rejuvenation procedure, cosmetic surgery and most advanced
+                                skin care
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centerel">
+                    <a href="#" class="circbtn blue">
+                        discover
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="chooseprocedure">
+            <div class="container">
+                <h3 class="sectiontitle">choose the procedure you need:</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <div class="procedurebox">
+                                <div class="procedurebox__img">
+                                    <img src="img/procedure1.jpg" alt="Wrinkle  relaxants ">
+                                </div>
+                                <div class="procedurebox__title">
+                                    <p>Wrinkle relaxants </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <div class="procedurebox">
+                                <div class="procedurebox__img">
+                                    <img src="img/procedure2.jpg" alt="Wrinkle  relaxants ">
+                                </div>
+                                <div class="procedurebox__title">
+                                    <p>Lip enhancers</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <div class="procedurebox">
+                                <div class="procedurebox__img">
+                                    <img src="img/procedure3.jpg" alt="Wrinkle  relaxants ">
+                                </div>
+                                <div class="procedurebox__title">
+                                    <p>Microneedling</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <div class="procedurebox">
+                                <div class="procedurebox__img">
+                                    <img src="img/procedure4.jpg" alt="Wrinkle  relaxants ">
+                                </div>
+                                <div class="procedurebox__title">
+                                    <p>PRP facial</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <div class="procedurebox">
+                                <div class="procedurebox__img">
+                                    <img src="img/procedure5.jpg" alt="Wrinkle  relaxants ">
+                                </div>
+                                <div class="procedurebox__title">
+                                    <p>Laser facial peel</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <div class="procedurebox">
+                                <div class="procedurebox__img">
+                                    <img src="img/procedure6.jpg" alt="Wrinkle  relaxants ">
+                                </div>
+                                <div class="procedurebox__title">
+                                    <p>Mole removal</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="centerel">
+                    <a href="#" class="circbtn blue">
+                        see all services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="infosect2">
+            <div class="container">
+                <h3 class="sectiontitle">Meet our specialist</h3>
+                <div class="row align-items-center">
+                    <div class="col-lg-4 offset-lg-1">
+                        <div class="descr">
+                            <p class="title">
+                                Emma Vinarsky, MD, MBA
+                            </p>
+                            <p>
+                                Medical board Certifies, Cosmetic Surgeon and Oculoplastic surgeon
+                            </p>
+                            <p>
+                                <b>20</b> years experience in Beverly Hills, CA Performed over <b>21,000</b> surgical
+                                procedures both
+                                functional and cosmetic
+                            </p>
+                        </div>
+                        <a href="#" class="circbtn blue">
+                            discover
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="imgwrap">
+                            <img src="img/img3.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h3 class="sectiontitle">testimonials from our clients</h3>
+
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slidebox">
+                            <div class="videoposter">
+                                <img class="vpimg" src="img/img4.jpg" alt="img">
+                                <img class="playbtn" src="img/playbtn.png" alt="play">
+                            </div>
+                            <div class="textbox">
+                                <p class="title">Lisa Gameson</p>
+                                <p>
+                                    Amazing! Highly recommend this clinic needs (as well as many other things). The
+                                    specialists did an amazing job, I was satisfied. In any case, you are in good
+                                    hands!!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slidebox no-pic">
+                            <div class="pictureslide">
+                                <img class="vpimg" src="img/nopic.jpg" alt="img">
+                            </div>
+                            <div class="textbox">
+                                <p class="title">Lisa Gameson</p>
+                                <p>
+                                    Amazing! Highly recommend this clinic needs (as well as many other things). The
+                                    specialists did an amazing job, I was satisfied. In any case, you are in good
+                                    hands!!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slidebox">
+                            <div class="pictureslide">
+                                <img class="vpimg" src="img/img5.jpg" alt="img">
+                            </div>
+                            <div class="textbox">
+                                <p class="title">Lisa Gameson</p>
+                                <p>
+                                    Amazing! Highly recommend this clinic needs (as well as many other things). The
+                                    specialists did an amazing job, I was satisfied. In any case, you are in good
+                                    hands!!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slidebox avatar">
+                            <div class="pictureslide">
+                                <img class="vpimg" src="img/avatar.png" alt="img">
+                            </div>
+                            <div class="textbox">
+                                <p class="title">Lisa Gameson</p>
+                                <p>
+                                    Amazing! Highly recommend this clinic needs (as well as many other things). The
+                                    specialists did an amazing job, I was satisfied. In any case, you are in good
+                                    hands!!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer__logo">
+                        <a href="index.html"><img src="img/footer-logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <p class="footer__title">resources</p>
+                    <ul class="footerlist">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <p class="footer__title">Services</p>
+                    <ul class="footerlist twocol">
+                        <li><a href="#">Wrinkle relaxants </a></li>
+                        <li><a href="#">Cool Sculpting</a></li>
+                        <li><a href="#">Lip enhancers</a></li>
+                        <li><a href="#">IPL</a></li>
+                        <li><a href="#">Kybella</a></li>
+                        <li><a href="#">PDO thread facelift</a></li>
+                        <li><a href="#">Microneedling</a></li>
+                        <li><a href="#">Laser facial peel</a></li>
+                        <li><a href="#">Prp facial</a></li>
+                        <li><a href="#">Mole removal</a></li>
+                        <li><a href="#">Facial volume replacement </a></li>
+                        <li><a href="#">Pigmentation erasing</a></li>
+                        <li><a href="#">Facial enhancement
+                                with fillers </a></li>
+                        <li><a href="#">Hands rejuvenation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p class="footer__title">Contacts</p>
+                    <div class="footer__contacts">
+                        <p class="loc">
+                            7 East 86 Street, Suite 15D,New York, NY 10028
+                        </p>
+                        <p class="tel"><a href="tel:+12126510306">+1 (212) 651-0306</a></p>
+                        <p class="email"><a href="mailto:Dre@realbeutymedspa.com">Dre@realbeutymedspa.com</a></p>
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="img/footer-fb.svg" alt="facebook"></a></li>
+                            <li><a href="#" target="_blank"><img src="img/footer-inst.svg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="totop">
+                <img src="img/totop.svg" alt="to top">
+            </a>
+        </div>
+    </footer>
+
+    <div class="modalsect hide">
+        <div class="modalwrapper">
+            <div class="modalwindow">
+                <button class="closemodal" role="button"><img src="img/close.svg" alt="close modal"></button>
+                <div class="iframewrap">
+                    <iframe class="videoyt" width="560" height="315" src="https://www.youtube.com/embed/2VS9kqpm0D0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Lato', sans-serif;
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.circlebtn {
+    width: 229px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.6);
+    }
+}
+
+.sectiontitle {
+    text-align: center;
+    color: #052629;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 60px;
+
+    span {
+        font-weight: 300;
+    }
+}
+
+.circbtn.blue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 230px;
+    height: 74px;
+    padding: 10px;
+    color: #052629;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background: linear-gradient(90.93deg, #7DE8EF 0.72%, #97F9FF 99.32%);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+
+    &:hover {
+        background: linear-gradient(90.93deg, #A1F9FF 0.72%, #DCFDFF 99.32%), #C9ADA7;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid #052629;
+        transform: rotate(-10deg);
+    }
+}
+
+.centerel {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+
+
+
+
+@media(min-width:1501px) {
+    .container {
+        max-width: 1450px;
+    }
+}
