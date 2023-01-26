@@ -1,44 +1,56 @@
 $(document).ready(function () {
-    var swiper = new Swiper(".discountslider", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
 
-        speed: 700,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-    });
+
+    if ($('.swiper.discountslider').length > 0) {
+        var swiper = new Swiper(".swiper.discountslider", {
+            loop: true,
+            speed: 700,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+    }
+
+
 
     //   testimonials slider
-    var swiper = new Swiper(".testimonials-slider", {
-        centeredSlides: true,
-        speed: 600,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
+    if ($('.testimonials-slider').length > 0) {
+        var swiper1 = new Swiper(".testimonials-slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            speed: 600,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
             },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
 
-        },
-    });
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+
+            },
+        });
+    }
+    
+
 
     // scroll to top
     $(function () {

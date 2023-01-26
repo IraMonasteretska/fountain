@@ -18,7 +18,7 @@ header.header {
             &>li {
                 color: #fff;
                 text-transform: uppercase;
-                font-weight: 500;
+                font-family: 'Lato-medium';
                 font-size: 16px;
                 line-height: 19px;
 
@@ -202,13 +202,63 @@ header.header.sticky {
     background: rgba(14, 20, 25, 0.7);
     transition: 0.3s;
 
-    
+
 }
+
+// header black
+.header.header_black {
+    nav>ul>li>a {
+        color: #052629;
+
+        &:hover {
+            color: #1a9ca5;
+        }
+    }
+
+    nav>ul>li>span {
+        color: #052629;
+
+        &:hover {
+            color: #1a9ca5;
+        }
+    }
+
+    nav>ul li.dropdown span:after {
+        background: url('../img/hb-arrow.svg') no-repeat center/100%;
+    }
+
+    .header__contacts ul svg:hover path {
+        stroke: #1a9ca5;
+    }
+
+    .circlebtn {
+        border: 2px solid #052629;
+        color: #052629;
+    }
+
+    &.sticky {
+        background: #fff;
+        box-shadow: 0 0 10px #d7d7d7;
+    }
+
+    nav>ul .submenu ul {
+        box-shadow: 0 0 10px #979797;
+    }
+
+
+}
+
+
+
+
+
+
 
 @media(min-width:992px) {
 
     header.header.sticky {
         padding: 10px 0;
+
         .header__logo img {
             width: 150px;
         }
@@ -223,7 +273,6 @@ header.header.sticky {
         width: 223px;
     }
 }
-
 
 @media(max-width:1500.8px) {
     .header__logo img {
@@ -424,7 +473,7 @@ header.header.sticky {
             color: #052629;
             letter-spacing: 0.02em;
             text-transform: uppercase;
-            font-weight: 500;
+            font-family: 'Lato-medium';
             font-size: 16px;
             line-height: 19px;
             width: 230px;
@@ -445,6 +494,14 @@ header.header.sticky {
         max-width: 720px;
         margin: 0 auto;
         position: relative;
+    }
+
+    .header.header_black .circlebtn {
+        border: none;
+    }
+
+    .header.header_black {
+        background: #fff;
     }
 
 }
@@ -512,7 +569,7 @@ header.header.sticky {
 
     header.header nav>ul>li,
     header.header nav>ul>li a {
-        font-weight: 500;
+        font-family: 'Lato-medium';
         font-size: 16px;
         line-height: 19px;
     }

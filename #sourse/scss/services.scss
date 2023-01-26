@@ -90,6 +90,7 @@
 .question__header {
     position: relative;
     padding-right: 30px;
+    cursor: pointer;
 
     &::after {
         content: '';
@@ -217,6 +218,16 @@
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 @media(min-width:1950px) {
