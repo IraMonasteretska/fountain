@@ -145,5 +145,8 @@ $(document).ready(function () {
         $('.question__header').not(this).removeClass('show');
     });
 
+    // about
+    $(".num span").counterUp({delay: 10, time: 1000});
+
 
 });
