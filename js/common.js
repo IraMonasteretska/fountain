@@ -177,9 +177,24 @@ $(document).ready(function () {
         });
     }
 
+    if ($(window).width() > 991) {
+        $(".textwrap").on("click", "a.scrolltoform", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
+    }
+    
 
-
-
+    if ($(window).width() < 992)  {
+        $(".textwrap").on("click", "a.scrolltoform", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top - 125;
+            $('body,html').animate({ scrollTop: top }, 1500);
+        });
+    }
 
 
 
