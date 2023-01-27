@@ -1,5 +1,5 @@
 .conttopsect {
-    padding: 234px 0 110px;
+    padding: 234px 0 0 0;
     text-align: center;
 
     h1 {
@@ -26,6 +26,7 @@
 
 .contactsection {
     padding-bottom: 130px;
+    padding-top: 110px;
 }
 
 .contactsection__wrapper {
@@ -135,7 +136,7 @@
     }
 
     .conttopsect {
-        padding: 201px 0 80px;
+        padding: 201px 0 0 0;
     }
 
     .contactsection__wrapper {
@@ -164,7 +165,7 @@
 
 @media(max-width:991.8px) {
     .conttopsect {
-        padding: 200px 0 60px;
+        padding: 200px 0 0 0;
     }
 
     .conttopsect h1 {
@@ -176,6 +177,9 @@
         margin-bottom: 20px;
     }
 
+    .contactsection {
+        padding-top: 80px;
+    }
 
 
 }
@@ -187,7 +191,7 @@
     }
 
     .conttopsect {
-        padding: 140px 0 40px;
+        padding: 140px 0 0 0;
     }
 
     .conttopsect .descr p {

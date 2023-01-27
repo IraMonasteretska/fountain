@@ -49,7 +49,7 @@ $(document).ready(function () {
             },
         });
     }
-    
+
 
 
     // scroll to top
@@ -145,8 +145,42 @@ $(document).ready(function () {
         $('.question__header').not(this).removeClass('show');
     });
 
+
+
+    // scroll to sect
+    $(".header__scrollel .header__contacts").on("click", "a.circlebtn", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
+    $(".header__scrollel .mobcontbox").on("click", "a.circlink", function (event) {
+        event.preventDefault();
+        $('.mobmenu').removeClass('show');
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 125;
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
+
+
+
+
     // about
-    $(".num span").counterUp({delay: 10, time: 1000});
+    if ($('.num').length > 0) {
+        $(".num span").counterUp({ delay: 10, time: 1000 });
+    }
+
+    if ($('.twentytwenty-container').length > 0) {
+        $(function () {
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({ default_offset_pct: 0.7 });
+            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({ default_offset_pct: 0.3, orientation: 'vertical' });
+        });
+    }
+
+
+
+
+
 
 
 });
