@@ -235,6 +235,30 @@ input[type=number] {
     }
 }
 
+.afterbefwrapper {
+    max-width: 60%;
+    margin: 30px auto;
+}
+
+.infosect3 .textwrap img {
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.infosect3 .textwrap  {
+    color: #4A4A4A;
+    font-size: 18px;
+    line-height: 150%;
+
+    ul {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #333;
+    }
+}
+
 
 @media(min-width:1950px) {
     .appointment {
@@ -303,7 +327,10 @@ input[type=number] {
         max-width: 100%;
     }
 
-
+    .afterbefwrapper {
+        max-width: 100%;
+        width: 100%;
+    }
 
 
     .infosect3 {
@@ -366,6 +393,14 @@ input[type=number] {
         height: 50px;
     }
 
+    .footerlist:not(.twocol) {
+        
+        li {
+           display: inline-block;
+           vertical-align: middle;
+           margin: 0 35px 0 0;
+        }
+    }
 
 
 

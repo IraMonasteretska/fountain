@@ -158,6 +158,9 @@ footer.footer {
 
 }
 
+.afterbefwrapper img {
+    margin: 0 !important;
+}
 
 
 @media(max-width:1199.8px) {
@@ -200,9 +203,9 @@ footer.footer {
     }
 
     .footerlist.twocol li {
-        max-width: 100%;
-        flex: 0 0 100%;
-        padding: 0 !important;
+        // max-width: 100%;
+        // flex: 0 0 100%;
+        // padding: 0 !important;
     }
 
     footer.footer .totop {
@@ -213,5 +216,16 @@ footer.footer {
     .infosect2 {
         background: none;
     }
+
+    .footer__title {
+        margin-bottom: 15px;
+    }
+    .footerlist li,
+    .footer__contacts p {
+        margin-bottom: 10px;
+    }
+
+
+
 
 }
